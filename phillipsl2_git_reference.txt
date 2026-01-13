@@ -1,0 +1,12 @@
+"git commit" starts the process to uploading changes, before uploading with "git push"
+commits are formatted in a tree, with each commit having a link to the commit that it was based on
+branches can point to specific commits, allowing you to select specific parts of the commit tree and push to them
+these branches can be merged back into one, e.g. making a testing branch, then after testing merging it into main
+
+remotes are git repositories stored on a local machine that can be accessed from the internet, e.g. github repositories are all remote
+"git clone" downloads a remote copy of a repo and attaches it to the original
+"git fetch" downloads new commits for a remote repo and updates the head, synchronizing the remote repo
+it does not update the files themselves, it just downloads the commits and changes in the files so that git can update those files if you want
+
+"git pull" is a shorthand for "git fetch" then "git merge", downloading any new changes and merging them with the local changes
+"git push" uploads commits to the remote repo
